@@ -1,0 +1,12 @@
+<%- include('partials/links.ejs') %>
+<%- include('partials/header.ejs') %>
+<form action="/submit" method="post">
+    <!-- <input type="text" name="entry" placeholder="write here...."> -->
+    <div class="writepad">
+        <textarea name="entry" id="diary-entry" cols="30" rows="10" placeholder="write here...."></textarea>
+    </div>
+    <div class="finish-bttn-div">
+        <button type="submit" class="finish-bttn"><img src="images/upload.png" class="icon2"><span class="bttn-text">Done</span></button>
+    </div>
+</form>
+<%- include('partials/footer.ejs') %>

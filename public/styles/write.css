@@ -1,0 +1,32 @@
+.writepad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+#diary-entry{
+    height: 360px;
+    width: 360px;
+    padding: 10px;
+}
+.finish-bttn{
+    width: 170px;
+    height: 40px;
+    border-top: 5px solid rgb(0, 0, 0);
+    font-size: 35px;
+    padding-top: -10px;
+}
+.finish-bttn:hover{
+    cursor: pointer;
+}
+.finish-bttn-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon2{
+    height: 25px;
+}
+.bttn-text{
+    font-family: 'Indie Flower', cursive;
+}

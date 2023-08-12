@@ -1,0 +1,21 @@
+<%- include('partials/links.ejs') %>
+<%- include('partials/header.ejs') %>
+<body>
+    <h1>DiarIt</h1>
+    <div class="bttn-div">
+        <form action="/write" method="get">
+            <button class="button" type="submit" class="sumbit-btn"><img class="icon" src="images/writeicon.png"><span class="bttn-font">write</span></button>
+        </form>
+    </div>
+    <% if (list.length > 0) { %>
+        <div class="diary-entries-container">
+            <% for (const entry of list) { %>
+                <div class="diary-field">
+                    <div class="entries"><span class="date"><%= Date() %></span><br><em><%= entry %></em></div>
+                </div>
+            <% } %>
+        </div>
+    <% } else { %>
+        <p><em>Write your first diary on DiarIt</em></p>
+    <% } %>
+<%- include('partials/footer.ejs') %>
